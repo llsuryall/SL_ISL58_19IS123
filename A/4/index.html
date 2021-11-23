@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>4</title>
+	</head>
+	<body>
+		<form>
+			<input id="inp1" type="text"/>
+			<input id="inp2" type="text"/>
+			<input id="butt1" type="button" value="Display"/>
+		</form>
+		<script>
+			const inp1=document.getElementById('inp1');
+			const inp2=document.getElementById('inp2');
+			const butt1=document.getElementById('butt1');
+			butt1.addEventListener('click',function(){
+				alert('Input 1 value - '+inp1.value+'\n'+'Input 2 value - '+inp2.value);
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>2b</title>
+	</head>
+	<body>
+		<input id="inp1" type="text" value="some text"/>
+		<script>
+			'use strict';
+			const inp1=document.getElementById('inp1');
+			inp1.style.color='white';
+			inp1.style.backgroundColor='blue';
+			inp1.addEventListener('focus',
+				function(){
+					inp1.style.backgroundColor='red';
+				}
+			);
+			inp1.addEventListener('blur',
+				function(){
+					inp1.style.backgroundColor='blue';
+				}
+			);
+		</script>
+	</body>
+</html>

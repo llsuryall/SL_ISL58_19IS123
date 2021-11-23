@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>5</title>
+	</head>
+	<body>
+		<input id="inp1" type="text"/>
+		<input id="butt1" type="button" value="Divisible by 3 or 7?"/>
+		<script>
+			const inp1=document.getElementById('inp1');
+			const butt1=document.getElementById('butt1');
+			butt1.addEventListener('click',function(){
+				let cur_val=parseInt(inp1.value);
+				if(cur_val%3==0 || cur_val%7==0){
+					alert('true');
+				}else{
+					alert('false');
+				}
+			});
+		</script>
+	</body>
+</html>

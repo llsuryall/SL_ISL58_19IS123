@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>1a</title>
+	</head>
+	<body>
+		<input id="inp1" type="button" value="Button"/>
+		<script>
+			const inp1=document.getElementById('inp1');
+			const func1=function(){
+				alert("Func 1");
+			};
+			const func2=function(){
+				alert("Func 2");
+			};
+			inp1.addEventListener('click',func2);//functions are called in the order they are added
+			inp1.addEventListener('click',func1);
+		</script>
+	</body>
+</html>

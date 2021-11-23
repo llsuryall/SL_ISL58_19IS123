@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>2a</title>
+	</head>
+	<body>
+		<input id="inp1" type="button" value="Button"/>
+		<h2 id="output"></h2>
+		<script>
+			'use strict';
+			const inp1=document.getElementById('inp1');
+			const output=document.getElementById('output');
+			inp1.addEventListener('mouseover',
+				function(){
+					output.innerHTML="Moused over";
+				}
+			);
+			inp1.addEventListener('mouseout',
+				function(){
+					output.innerHTML="Moused out";
+				}
+			);
+		</script>
+	</body>
+</html>

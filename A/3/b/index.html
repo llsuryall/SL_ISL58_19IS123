@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>3b</title>
+	</head>
+	<body>
+		<input id="inp1" type="button" value="Change color"/>
+		<script>
+			const inp1=document.getElementById('inp1');
+			function random_color(){
+				return 'rgb('+Math.round(Math.random()*255)+','+Math.round(Math.random()*255)+','+Math.round(Math.random()*255)+')';
+			}
+			inp1.addEventListener('click',function(){
+				document.body.style.backgroundColor=random_color();
+			});//functions are called in the order they are added
+		</script>
+	</body>
+</html>
+

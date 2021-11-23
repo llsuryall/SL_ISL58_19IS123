@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>6</title>
+	</head>
+	<body>
+		<input id="inp1" type="text"/>
+		<input id="inp2" type="text"/>
+		<input id="butt1" type="button" value="Add"/>
+		<input id="butt2" type="button" value="Multiply"/>
+		<h3 id="ans"></h3>
+		<script>
+			'use strict';
+			const inp1=document.getElementById('inp1');
+			const inp2=document.getElementById('inp2');
+			const butt1=document.getElementById('butt1');
+			const butt2=document.getElementById('butt2');
+			const ans=document.getElementById('ans');
+			let cur1,cur2;
+			function validat(){
+				cur1=parseInt(inp1.value);
+				cur2=parseInt(inp2.value);
+				cur1=(isNaN(cur1)?0:cur1);
+				cur2=(isNaN(cur2)?0:cur2);
+				inp1.value=cur1;
+				inp2.value=cur2;
+			}
+			butt1.addEventListener('click',function(){
+				validat();
+				ans.innerHTML=(cur1+cur2);
+			});
+			butt2.addEventListener('click',function(){
+				validat();
+				ans.innerHTML=(cur1*cur2);
+			});
+		</script>
+	</body>
+</html>
+

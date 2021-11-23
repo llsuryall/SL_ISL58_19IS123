@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>1b</title>
+	</head>
+	<body>
+		<select id="inp1">
+			<option>Food 1</option>
+			<option>Food 2</option>
+			<option>Food 3</option>
+		</select>
+		<script>
+			const inp1=document.getElementById('inp1');
+			inp1.addEventListener('change',
+				function(){
+					alert('You have selected '+inp1.value);
+				}
+			);
+		</script>
+	</body>
+</html>
